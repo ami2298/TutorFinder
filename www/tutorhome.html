@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TUTOR HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<style>
+     .card-title {
+    float: left;
+        text-align: left;
+    display: inline-block;
+    width:25%;
+    font-weight: bold;
+}
+.card-items {
+    margin: auto;
+    display: block;
+    clear: both;
+    width:90%;
+    margin-top: 10px;
+}
+.card-value {
+    float: right;
+    text-align: left;
+    display: inline-block;
+    width: 75%;
+}
+    .user{
+    width:100%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 10px;
+    padding:10px;
+    text-align: center;
+        color:white;
+/*    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.3);*/
+     border-radius: 7px 7px 7px 7px;
+   
+}
+
+.user:hover{
+    width:100%;
+    height: auto;
+    background-color: transparent;
+/*    box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.22);*/
+    border-radius: 7px 7px 7px 7px;
+   
+}
+.user_content{
+   
+}
+    </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">TutorFinder</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container" style="width: 95%">
+    <div class="row">
+       
+        <div class="col-sm-12">
+            
+                    
+                    <div class="row">
+                        <div class="col-12" style="text-align: center">
+                             <div class="list-container">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                   
+                </div>
+            </div>
+     <div class="row" style="margin-top: 15px;margin-bottom: 15px;">
+                        <div class="col-12">
+                              <button onclick="window.location='updateinfotut.html'">Edit Your Profile</button>
+                        </div>
+                    </div>
+<div class="row" style="margin-top: 15px;margin-bottom: 15px;">
+                        <div class="col-12">
+                              <button onclick="alterStatus()" ><div class="statustut"></div></button>
+                        </div>
+                    </div>
+                        
+            
+</div>
+       
+    
+
+
+
+<script src="js/tutorhome.js"></script>
+<script>
+    
+  
+//function updatestatus(){
+//    db = window.openDatabase("Tutor", "1.0", "Tutor Database", 1024 * 1024);
+//    db.transaction(function (tx) {
+//        var email = localStorage.getItem("email1");
+//        var query = "select * from Tutor";
+//        console.log(email1);
+//        tx.executeSql(query, [], function (tx, result) {
+//            console.log(result);
+//            if( result !== undefined && result !== null && result !== "" && result.rows.length > 0){
+//                for (var i =0 ; i < result.rows.length; i++){
+//                    if(result.rows[i].email === email){
+//                       
+//                        if(result.rows[i].status === "Activate"){
+//                             var query = "update tutor set status ='Deactivate' where email '"+email+"'";
+//                            tx.executeSql(query, [], function(tx, result) {
+//                                console.log(result);
+//                                alert("Account Deactivated");
+//                                window.location.href="tutorhome.html";
+//                            })
+//                        }
+//                        if(result.rows[i].status === "Deactivate"){
+//                             var query = "update tutor set status ='Activate' where email '"+email+"'";
+//                            tx.executeSql(query, [], function(tx, result) {
+//                                console.log(result);
+//                                alert("Account Activated");
+//                                window.location.href="tutorhome.html";
+//                            })
+//                        }
+//                    }
+//                }
+//            }
+//              
+//        })
+//    })
+//
+//}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TUTOR | HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<style>
+img{
+        border: 5px solid white;
+        border-radius: 100%;
+        
+    }
+    button{
+        width:50%;
+    }
+    button:hover{
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">TutorFinder</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container-fluid">
+    <div class="row">
+       
+        <div class="col-sm-12">
+            <div class="user">
+                <div class="user_content">
+                    <div class="row">
+                        <div class="col-12" style="margin-top: 15px;margin-bottom: 10px;">
+                             <img src="img/Contact%20Icon.png">
+                        </div>
+                    </div>
+                   <div class="row" style="margin-top: 15px;margin-bottom: 10px;">
+                        <div class="col-12">
+                              <button  onclick="window.location='studlog.html'">STUDENT</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-sm-12">
+            <div class="user">
+                 <div class="user_content">
+                    <div class="row">
+                        <div class="col-12">
+                             <img src="img/Contact%20Icon.png" style="margin-top: 15px;margin-bottom: 10px;">
+                        </div>
+                    </div>
+                   <div class="row" style="margin-top: 15px; margin-bottom: 10px;">
+                        <div class="col-12">
+                              <button  onclick="window.location='tutorlog.html'">TUTOR</button>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+           
+    </div>
+   
+    
+</div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

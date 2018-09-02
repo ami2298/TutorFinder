@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TUTOR REGISTER</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">TutorFinder</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container-fluid">
+    <div class="row">
+       
+        <div class="col-sm-12">
+            <div class="loginpage">
+                <div class="login-page">
+                  <div class="form">
+                   
+                    <div class="login-form">
+                      <input id="fname" type="text" placeholder="First Name"required/>
+                      <input id="mname" type="text" placeholder="Middle Name"required/>
+                         <input id="lname" type="text" placeholder="Last Name"required/>
+                      <input id="email" type="email" placeholder="Email"required/>
+                         <input id="pno" pattern= "[0-9]" type="text" placeholder="Phone No."required/>
+                      <input id="pwd" type="password" placeholder="Password"required/>
+                        <input id="rpwd" type="password" placeholder="Re-type Password"required/>
+                      <button onclick="tutorregister();">REGISTER</button>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script src="js/tutorreg.js"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<script src="js/tutorreg.js"></script>     
+</body>
+</html>

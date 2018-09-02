@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>CONTACT US</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+    
+<style type="text/css">
+    body{
+        height: 100%;
+/*        background: linear-gradient(to top, #30cfd0 0%, #330867 100%);*/
+        background: linear-gradient(to top, #f43b47, #453a94 );
+    }
+    .about_hover2{
+        background-color: aliceblue;
+         box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.22);
+         border-radius: 7px 7px 7px 7px;
+        margin-top: 10px;
+        width: auto;
+        padding:20px;
+    }
+     .about_hover{
+        background-color:white;
+         box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.22);
+         border-radius: 7px 7px 7px 7px;
+         margin-top: 10px;
+         width: auto;
+         padding:20px;
+        
+         
+    }
+    .about_us_content{
+        margin: auto;
+    }
+    
+    .about_hover2:hover,.about_hover:hover{
+        background-color :#FF5733;
+        color:white;
+    }
+    img{
+        border: 5px solid white;
+        border-radius: 100%;
+        
+    }
+    
+    .head_section{
+        width: auto;
+        background-color: white;
+        margin-top: 10px;
+        box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.1);
+    }
+    .head_text{
+        text-align: center;
+        
+        color:#FFC300 ;
+        font-size: 20px;
+    }
+   .login-page {
+  width: 100%;
+}
+
+.form 
+
+</style>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">TutorFinder</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container-fluid" style="height: 608px;">
+    
+    
+        
+           
+                
+    <div class="row about_us_content" >
+        <div class="loginpage">
+                <div class="login-page">
+                  <div class="form">
+                   
+                    <form class="login-form">
+                      <input id="lname" type="text" placeholder="Name"/>
+                      
+                      <input type="email" id="email" placeholder="Email"/>
+                       <textarea id ="comment"rows="4" cols="50" placeholder="Comments" >Comments</textarea>
+                     
+                      <button onclick="sendemail(); ">Send</button>
+                       
+                      
+                    </form>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+   
+
+<script>
+    function sendemail(){
+         var name = $("#lname").val();
+        var email = $("#email").val();
+        var comment = $("#comment").val();
+          if (name === undefined || name === null || name === "") 
+     {
+        alert("Please Enter Your Email");
+        return;
+    }
+         if (email === undefined || email === null || email === "") 
+     {
+        alert("Please Enter Your Email");
+        return;
+    }
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+      alert("You have entered an invalid email address!");
+    }
+    if (comment === undefined || comment === null || comment === "" ) 
+    {
+        alert("Please ENter the comment");
+        return;
+    }
+        alert("Email Send");
+       window.location.href = "home.html"; 
+    }
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TUTOR UPDATE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<style type="text/css">
+    .op{
+        background-color:#b721ff;
+        border: none;
+    }
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">TutorFinder</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container-fluid">
+    
+<!--
+    <div class="list-container">
+            
+                            </div>
+-->
+    <div class="row">
+       
+        <div class="col-sm-12">
+            <div class="loginpage">
+                <div class="login-page">
+                  <div class="form">
+                   
+                    <div class="login-form">
+                      <input id="fname" type="text" placeholder="First Name" readonly/>
+                      <input id="mname" type="text" placeholder="Middle Name" readonly/>
+                         <input id="lname"  type="text" placeholder="Last Name" readonly/>
+                      <input id="email" type="email" placeholder="Email" readonly/>
+                         <input id="pno" type="text" pattern= "[0-9]" placeholder="Phone No."/>
+                     <input id="addr" type="text" placeholder="Address"/> 
+                        <input id="area" type="text" placeholder="Area"/>
+                         <input id="city" type="text" placeholder="City"/>
+                         <input id="state" type="text" placeholder="State"/>
+                         <select id="skills" name="skill">
+                        <option class="op" value="C" >*By default C is select Choose to Update*</option>
+                          <option class="op" value="C" >C</option>
+                          <option class="op" value="C++">C++</option>
+                          <option class="op" value="Java">Java</option>
+                          <option class="op" value="Web Development">Web Development</option>
+                          <option class="op" value="Graphic Designing">Graphic Designing</option>
+                          <option class="op" value="Python">Python</option>
+                         <option class="op" value="Ruby">Ruby</option>
+                        </select> 
+<!--
+                     <div class="row skills ">Skills <br>
+                                <div class="col-xs-12"> 
+                                    <div class="row"><br>
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="C"></div>
+                        <div class="col-xs-10">C</div>
+                    </div>
+                     <div class="row">
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="C++"></div>
+                        <div class="col-xs-10">C++</div>
+                    </div>    
+                     <div class="row">
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="Java"></div>
+                        <div class="col-xs-10">Java</div>
+                    </div>
+                     <div class="row">
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="Web Development"></div>
+                        <div class="col-xs-10">Web Development</div>
+
+                    </div>    
+                     <div class="row">
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="Graphics Designing"></div>
+                        <div class="col-xs-10">Graphics Designing</div>
+                    </div>    
+                     <div class="row">
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="Python"></div>
+                        <div class="col-xs-10">Python</div>
+                    </div>    
+                     <div class="row">
+                        <div class="col-xs-2"><input type="checkbox" name="skills" value="Ruby"></div>
+                        <div class="col-xs-10">Ruby</div>
+                    </div>    
+                   </div>
+-->
+<!--                            </div>-->
+                    
+                      <div>
+                      <button onclick="updatedata();">UPDATE</button>
+                     
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    </div>
+<script src="js/update.js"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Please Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+   <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+    
+<style type="text/css">
+    
+    .about_hover2{
+        background-color: aliceblue;
+         box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.22);
+         border-radius: 7px 7px 7px 7px;
+        margin-top: 10px;
+        width: auto;
+        padding:20px;
+    }
+     .about_hover{
+        background-color:white;
+         box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.22);
+         border-radius: 7px 7px 7px 7px;
+         margin-top: 10px;
+         width: auto;
+         padding:20px;
+        
+         
+    }
+    .about_us_content{
+        margin: auto;
+    }
+    
+    .about_hover2:hover,.about_hover:hover{
+        background-color :#FF5733;
+        color:white;
+    }
+    img{
+        border: 5px solid white;
+        border-radius: 100%;
+        
+    }
+    
+    .head_section{
+        width: auto;
+        background-color: white;
+        margin-top: 10px;
+        box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.3);
+    }
+    .head_text{
+        text-align: center;
+        
+        color:#FFC300 ;
+        font-size: 20px;
+    }
+    .text-center{
+        padding:10%;
+        margin:10%;
+    }
+    @font-face {
+font-family: Comfortaa;
+src: url(5.ttf);
+}
+    @font-face {
+font-family: stylefont;
+src: url(6.ttf);
+}
+</style>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">TutorFinder</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container-fluid">
+    
+    
+           
+                
+    <div class="row " >
+        <div class="col-lg-12 ">
+            <div class="text-center">
+               <b style="font-size: 40px;color:white;font-family: Comfortaa;"> Please First Register Your Self</b><br>
+                <button  onclick="window.location.href='index.html'">Back to Home</button>                
+                
+               
+
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>
